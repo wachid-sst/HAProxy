@@ -1,0 +1,1276 @@
+From: <Saved by Blink>
+Subject: Statistics Report for HAProxy
+Date: Sun, 16 Jul 2016 19:22:40 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--lMJtZ0zOMstXRfuPSzXNsnABBk9RCsrfW6EtuGJkHA----"
+
+------MultipartBoundary--lMJtZ0zOMstXRfuPSzXNsnABBk9RCsrfW6EtuGJkHA----
+Content-Type: text/html
+Content-ID: <frame-8-2AA6B453-FEFE-42E8-B5FB-69974B020CCD@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://192.168.72.12/haproxy?stats
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3Dwindows-1252"><title>Statistics Report for HA=
+Proxy</title>
+
+<style type=3D"text/css"><!--
+body { font-family: arial, helvetica, sans-serif; font-size: 12px; font-wei=
+ght: normal; color: black; background: white;}
+th,td { font-size: 10px;}
+h1 { font-size: x-large; margin-bottom: 0.5em;}
+h2 { font-family: helvetica, arial; font-size: x-large; font-weight: bold; =
+font-style: italic; color: #6020a0; margin-top: 0em; margin-bottom: 0em;}
+h3 { font-family: helvetica, arial; font-size: 16px; font-weight: bold; col=
+or: #b00040; background: #e8e8d0; margin-top: 0em; margin-bottom: 0em;}
+li { margin-top: 0.25em; margin-right: 2em;}
+.hr {margin-top: 0.25em; border-color: black; border-bottom-style: solid;}
+.titre	{background: #20D0D0;color: #000000; font-weight: bold; text-align: =
+center;}
+.total	{background: #20D0D0;color: #ffff80;}
+.frontend	{background: #e8e8d0;}
+.socket	{background: #d0d0d0;}
+.backend	{background: #e8e8d0;}
+.active0	{background: #ff9090;}
+.active1	{background: #ff9090;}
+.active2	{background: #ffd020;}
+.active3	{background: #ffffa0;}
+.active4	{background: #c0ffc0;}
+.active5	{background: #ffffa0;}
+.active6	{background: #20a0ff;}
+.active7	{background: #ffffa0;}
+.active8 {background: #20a0FF;}
+.active9	{background: #e0e0e0;}
+.backup0	{background: #ff9090;}
+.backup1	{background: #ff9090;}
+.backup2	{background: #ff80ff;}
+.backup3	{background: #c060ff;}
+.backup4	{background: #b0d0ff;}
+.backup5	{background: #c060ff;}
+.backup6	{background: #90b0e0;}
+.backup7	{background: #c060ff;}
+.backup8	{background: #cc9900;}
+.backup9	{background: #e0e0e0;}
+.maintain	{background: #c07820;}
+.rls      {letter-spacing: 0.2em; margin-right: 1px;}
+
+a.px:link {color: #ffff40; text-decoration: none;}a.px:visited {color: #fff=
+f40; text-decoration: none;}a.px:hover {color: #ffffff; text-decoration: no=
+ne;}a.lfsb:link {color: #000000; text-decoration: none;}a.lfsb:visited {col=
+or: #000000; text-decoration: none;}a.lfsb:hover {color: #505050; text-deco=
+ration: none;}
+table.tbl { border-collapse: collapse; border-style: none;}
+table.tbl td { text-align: right; border-width: 1px 1px 1px 1px; border-sty=
+le: solid solid solid solid; padding: 2px 3px; border-color: gray; white-sp=
+ace: nowrap;}
+table.tbl td.ac { text-align: center;}
+table.tbl th { border-width: 1px; border-style: solid solid solid solid; bo=
+rder-color: gray;}
+table.tbl th.pxname { background: #b00040; color: #ffff40; font-weight: bol=
+d; border-style: solid solid none solid; padding: 2px 3px; white-space: now=
+rap;}
+table.tbl th.empty { border-style: none; empty-cells: hide; background: whi=
+te;}
+table.tbl th.desc { background: white; border-style: solid solid none solid=
+; text-align: left; padding: 2px 3px;}
+
+table.lgd { border-collapse: collapse; border-width: 1px; border-style: non=
+e none none solid; border-color: black;}
+table.lgd td { border-width: 1px; border-style: solid solid solid solid; bo=
+rder-color: gray; padding: 2px;}
+table.lgd td.noborder { border-style: none; padding: 2px; white-space: nowr=
+ap;}
+table.det { border-collapse: collapse; border-style: none; }
+table.det th { text-align: left; border-width: 0px; padding: 0px 1px 0px 0p=
+x; font-style:normal;font-size:11px;font-weight:bold;font-family: sans-seri=
+f;}
+table.det td { text-align: right; border-width: 0px; padding: 0px 0px 0px 4=
+px; white-space: nowrap; font-style:normal;font-size:11px;font-weight:norma=
+l;}
+u {text-decoration:none; border-bottom: 1px dotted black;}
+div.tips {
+ display:block;
+ visibility:hidden;
+ z-index:2147483647;
+ position:absolute;
+ padding:2px 4px 3px;
+ background:#f0f060; color:#000000;
+ border:1px solid #7040c0;
+ white-space:nowrap;
+ font-style:normal;font-size:11px;font-weight:normal;
+ -moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;
+ -moz-box-shadow:gray 2px 2px 3px;-webkit-box-shadow:gray 2px 2px 3px;box-s=
+hadow:gray 2px 2px 3px;
+}
+u:hover div.tips {visibility:visible;}
+-->
+</style></head>
+<body><h1><a href=3D"http://www.haproxy.org/" style=3D"text-decoration: non=
+e;">HAProxy version 1.5.14, released 2015/07/02</a></h1>
+<h2>Statistics Report for pid 1374</h2>
+<hr width=3D"100%" class=3D"hr">
+<h3>&gt; General process information</h3>
+<table border=3D"0"><tbody><tr><td align=3D"left" nowrap=3D"" width=3D"1%">
+<p><b>pid =3D </b> 1374 (process #1, nbproc =3D 1)<br>
+<b>uptime =3D </b> 0d 0h35m04s<br>
+<b>system limits:</b> memmax =3D unlimited; ulimit-n =3D 8049<br>
+<b>maxsock =3D </b> 8049; <b>maxconn =3D </b> 4000; <b>maxpipes =3D </b> 0<=
+br>
+current conns =3D 6; current pipes =3D 0/0; conn rate =3D 6/sec<br>
+Running tasks: 1/44; idle =3D 100 %<br>
+</p></td><td align=3D"center" nowrap=3D"">
+<table class=3D"lgd"><tbody><tr>
+<td class=3D"active4">&nbsp;</td><td class=3D"noborder">active UP </td><td =
+class=3D"backup4">&nbsp;</td><td class=3D"noborder">backup UP </td></tr><tr=
+>
+<td class=3D"active3"></td><td class=3D"noborder">active UP, going down </t=
+d><td class=3D"backup3"></td><td class=3D"noborder">backup UP, going down <=
+/td></tr><tr>
+<td class=3D"active2"></td><td class=3D"noborder">active DOWN, going up </t=
+d><td class=3D"backup2"></td><td class=3D"noborder">backup DOWN, going up <=
+/td></tr><tr>
+<td class=3D"active0"></td><td class=3D"noborder">active or backup DOWN &nb=
+sp;</td><td class=3D"active9"></td><td class=3D"noborder">not checked </td>=
+</tr><tr>
+<td class=3D"maintain"></td><td class=3D"noborder" colspan=3D"3">active or =
+backup DOWN for maintenance (MAINT) &nbsp;</td></tr><tr>
+<td class=3D"active8"></td><td class=3D"noborder" colspan=3D"3">active or b=
+ackup SOFT STOPPED for maintenance &nbsp;</td></tr></tbody></table>
+Note: "NOLB"/"DRAIN" =3D UP with load-balancing disabled.</td><td align=3D"=
+left" valign=3D"top" nowrap=3D"" width=3D"1%"><b>Display option:</b><ul sty=
+le=3D"margin-top: 0.25em;"><li><form method=3D"GET" action=3D"http://192.16=
+8.72.12/haproxy?stats">Scope : <input value=3D"" name=3D"scope" size=3D"8" =
+maxlength=3D"20" tabindex=3D"1"></form>
+</li><li><a href=3D"http://192.168.72.12/haproxy?stats;up">Hide 'DOWN' serv=
+ers</a><br>
+</li><li><a href=3D"http://192.168.72.12/haproxy?stats;norefresh">Disable r=
+efresh</a><br>
+</li><li><a href=3D"http://192.168.72.12/haproxy?stats">Refresh now</a><br>
+</li><li><a href=3D"http://192.168.72.12/haproxy?stats;csv;norefresh">CSV e=
+xport</a><br>
+</li></ul></td><td align=3D"left" valign=3D"top" nowrap=3D"" width=3D"1%"><=
+b>External resources:</b><ul style=3D"margin-top: 0.25em;">
+<li><a href=3D"http://www.haproxy.org/">Primary site</a><br>
+</li><li><a href=3D"http://www.haproxy.org/#down">Updates (v1.5)</a><br>
+</li><li><a href=3D"http://www.haproxy.org/#docs">Online manual</a><br>
+</li></ul></td></tr></tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"ht=
+tp-in"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?stats#http-=
+in">http-in</a></th><th class=3D"empty" width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"frontend"><td class=3D"ac"><a name=3D"http-in/Frontend"><=
+/a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#http-in/Fro=
+ntend">Frontend</a></td><td colspan=3D"3"></td><td><u>3<div class=3D"tips">=
+<table class=3D"det"><tbody><tr><th>Current connection rate:</th><td>3/s</t=
+d></tr><tr><th>Current session rate:</th><td>3/s</td></tr><tr><th>Current r=
+equest rate:</th><td>1/s</td></tr></tbody></table></div></u></td><td><u>4<d=
+iv class=3D"tips"><table class=3D"det"><tbody><tr><th>Max connection rate:<=
+/th><td>4/s</td></tr><tr><th>Max session rate:</th><td>4/s</td></tr><tr><th=
+>Max request rate:</th><td>3/s</td></tr></tbody></table></div></u></td><td>=
+-</td><td>3</td><td>4</td><td><span class=3D"rls">3</span>000</td><td><u>11=
+7<div class=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. connections:<=
+/th><td>117</td></tr><tr><th>Cum. sessions:</th><td>117</td></tr><tr><th>Cu=
+m. HTTP requests:</th><td>219</td></tr><tr><th>- HTTP 1xx responses:</th><t=
+d>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>104</td></tr><tr><th>&nb=
+sp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx=
+ responses:</th><td>104</td></tr><tr><th>- HTTP 4xx responses:</th><td>10</=
+td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other re=
+sponses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>105</td><=
+/tr></tbody></table></div></u></td><td></td><td></td><td>8<span class=3D"rl=
+s">1</span>430</td><td><span class=3D"rls">8</span>13<span class=3D"rls">1<=
+/span>477<div class=3D"tips">compression: in=3D0 out=3D0 bypassed=3D0 savin=
+gs=3D0%</div></td><td>0</td><td>0</td><td>10</td><td></td><td></td><td></td=
+><td></td><td class=3D"ac">OPEN</td><td class=3D"ac" colspan=3D"8"></td></t=
+r></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"ht=
+tps-in"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?stats#http=
+s-in">https-in</a></th><th class=3D"empty" width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"frontend"><td class=3D"ac"><a name=3D"https-in/Frontend">=
+</a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#https-in/F=
+rontend">Frontend</a></td><td colspan=3D"3"></td><td><u>0<div class=3D"tips=
+"><table class=3D"det"><tbody><tr><th>Current connection rate:</th><td>3/s<=
+/td></tr><tr><th>Current session rate:</th><td>0/s</td></tr><tr><th>Current=
+ request rate:</th><td>0/s</td></tr></tbody></table></div></u></td><td><u>4=
+<div class=3D"tips"><table class=3D"det"><tbody><tr><th>Max connection rate=
+:</th><td>4/s</td></tr><tr><th>Max session rate:</th><td>4/s</td></tr><tr><=
+th>Max request rate:</th><td>4/s</td></tr></tbody></table></div></u></td><t=
+d>-</td><td>3</td><td>4</td><td><span class=3D"rls">3</span>000</td><td><u>=
+108<div class=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. connections=
+:</th><td>111</td></tr><tr><th>Cum. sessions:</th><td>108</td></tr><tr><th>=
+Cum. HTTP requests:</th><td>108</td></tr><tr><th>- HTTP 1xx responses:</th>=
+<td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><th>&nb=
+sp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx=
+ responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>108</t=
+d></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other res=
+ponses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td></tr=
+></tbody></table></div></u></td><td></td><td></td><td>0</td><td>2<span clas=
+s=3D"rls">0</span>196<div class=3D"tips">compression: in=3D0 out=3D0 bypass=
+ed=3D0 savings=3D0%</div></td><td>0</td><td>0</td><td>108</td><td></td><td>=
+</td><td></td><td></td><td class=3D"ac">OPEN</td><td class=3D"ac" colspan=
+=3D"8"></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"de=
+fault400"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?stats#de=
+fault400">default400</a></th><th class=3D"empty" width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"backend"><td class=3D"ac"><a name=3D"default400/Backend">=
+</a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#default400=
+/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td><td>0</td>=
+<td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"tips"><table=
+ class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>Cum=
+. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><td>0=
+</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><th>&nbsp;&n=
+bsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx resp=
+onses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td></tr>=
+<tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other responses:=
+</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td></tr><tr><t=
+h colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><th>- Queue =
+time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th><td>0</td><=
+td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td></tr><tr><=
+th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table></div></u></=
+td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compression: in=
+=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</td><td></=
+td><td>0</td><td><u>0<div class=3D"tips">Connection resets during transfers=
+: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=3D"ac">35m=
+4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">0</td><td class=3D"a=
+c">0</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>0</td><td>&=
+nbsp;</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"in=
+aportnetdev-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/hapro=
+xy?stats#inaportnetdev-servers">inaportnetdev-servers</a></th><th class=3D"=
+empty" width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"inaportnetdev-server=
+s/webserver1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?st=
+ats#inaportnetdev-servers/webserver1">webserver1</a></td><td>0</td><td>0</t=
+d><td>-</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>-</td><td>=
+<u>0<div class=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:<=
+/th><td>0</td></tr><tr><th>Cum. HTTP responses:</th><td>0</td></tr><tr><th>=
+- HTTP 1xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx re=
+sponses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th>=
+<td>0</td><td>(0%)</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td><td=
+>(0%)</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td><td>(0%)</td></t=
+r><tr><th>- other responses:</th><td>0</td><td>(0%)</td></tr><tr><th colspa=
+n=3D"3">Avg over last 1024 success. conn.</th></tr><tr><th>- Queue time:</t=
+h><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th><td>0</td><td>ms</t=
+d></tr><tr><th>- Response time:</th><td>0</td><td>ms</td></tr><tr><th>- Tot=
+al time:</th><td>0</td><td>ms</td></tr></tbody></table></div></u></td><td>0=
+</td><td>?</td><td>0</td><td>0</td><td></td><td>0</td><td></td><td>0</td><t=
+d><u>0<div class=3D"tips">Connection resets during transfers: 0 client, 0 s=
+erver</div></u></td><td>0</td><td>0</td><td class=3D"ac">35m4s UP</td><td c=
+lass=3D"ac"><u> L4OK in 0ms<div class=3D"tips">Layer4 check passed</div></u=
+></td><td class=3D"ac">1</td><td class=3D"ac">Y</td><td class=3D"ac">-</td>=
+<td><u>0<div class=3D"tips">Failed Health Checks</div></u></td><td>0</td><t=
+d>0s</td><td class=3D"ac">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"inaportnetdev-servers/Bac=
+kend"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#inap=
+ortnetdev-servers/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td=
+>0</td><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div clas=
+s=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td=
+></tr><tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx res=
+ponses:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr=
+><tr><th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><t=
+h>- HTTP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</t=
+h><td>0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>-=
+ other responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>=
+0</td></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr=
+><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time=
+:</th><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>=
+ms</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></t=
+able></div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">=
+compression: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><=
+td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets d=
+uring transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td c=
+lass=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td=
+><td class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td>=
+<td>0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"gw=
+dev-cluster"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?stats=
+#gwdev-cluster">gwdev-cluster</a></th><th class=3D"empty" width=3D"90%"></t=
+h></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"gwdev-cluster/webser=
+ver1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#gwde=
+v-cluster/webserver1">webserver1</a></td><td>0</td><td>0</td><td>-</td><td>=
+0</td><td>0</td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=
+=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td>=
+</tr><tr><th>Cum. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx res=
+ponses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><=
+td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>=
+(0%)</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr=
+><tr><th>- HTTP 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- ot=
+her responses:</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg ov=
+er last 1024 success. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><t=
+d>ms</td></tr><tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th=
+>- Response time:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><=
+td>0</td><td>ms</td></tr></tbody></table></div></u></td><td>0</td><td>?</td=
+><td>0</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div cla=
+ss=3D"tips">Connection resets during transfers: 0 client, 0 server</div></u=
+></td><td>0</td><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u=
+> L4OK in 2ms<div class=3D"tips">Layer4 check passed</div></u></td><td clas=
+s=3D"ac">1</td><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>8<div c=
+lass=3D"tips">Failed Health Checks</div></u></td><td>0</td><td>0s</td><td c=
+lass=3D"ac">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"gwdev-cluster/Backend"></=
+a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#gwdev-cluste=
+r/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td><td>0</td=
+><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"tips"><tabl=
+e class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>Cu=
+m. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><td>=
+0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><th>&nbsp;&=
+nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx res=
+ponses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td></tr=
+><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other responses=
+:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td></tr><tr><=
+th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><th>- Queue=
+ time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th><td>0</td>=
+<td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td></tr><tr>=
+<th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table></div></u><=
+/td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compression: in=
+=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</td><td></=
+td><td>0</td><td><u>0<div class=3D"tips">Connection resets during transfers=
+: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=3D"ac">35m=
+4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td class=3D"a=
+c">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>0</td><td>0=
+s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"in=
+aportnet-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?=
+stats#inaportnet-servers">inaportnet-servers</a></th><th class=3D"empty" wi=
+dth=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"inaportnet-servers/w=
+ebserver1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats=
+#inaportnet-servers/webserver1">webserver1</a></td><td>0</td><td>0</td><td>=
+-</td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<d=
+iv class=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><t=
+d>0</td></tr><tr><th>Cum. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP=
+ 1xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx response=
+s:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0<=
+/td><td>(0%)</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)<=
+/td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr>=
+<th>- other responses:</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3=
+">Avg over last 1024 success. conn.</th></tr><tr><th>- Queue time:</th><td>=
+0</td><td>ms</td></tr><tr><th>- Connect time:</th><td>0</td><td>ms</td></tr=
+><tr><th>- Response time:</th><td>0</td><td>ms</td></tr><tr><th>- Total tim=
+e:</th><td>0</td><td>ms</td></tr></tbody></table></div></u></td><td>0</td><=
+td>?</td><td>0</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0=
+<div class=3D"tips">Connection resets during transfers: 0 client, 0 server<=
+/div></u></td><td>0</td><td>0</td><td class=3D"ac">35m4s UP</td><td class=
+=3D"ac"><u> L4OK in 0ms<div class=3D"tips">Layer4 check passed</div></u></t=
+d><td class=3D"ac">1</td><td class=3D"ac">Y</td><td class=3D"ac">-</td><td>=
+<u>0<div class=3D"tips">Failed Health Checks</div></u></td><td>0</td><td>0s=
+</td><td class=3D"ac">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"inaportnet-servers/Backen=
+d"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#inaport=
+net-servers/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td=
+><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"t=
+ips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr>=
+<tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses=
+:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><=
+th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HT=
+TP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>=
+0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other=
+ responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td>=
+</tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><=
+th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th>=
+<td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td=
+></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table><=
+/div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compre=
+ssion: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</=
+td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets during =
+transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=
+=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td=
+ class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>=
+0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"mo=
+nitoring-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?=
+stats#monitoring-servers">monitoring-servers</a></th><th class=3D"empty" wi=
+dth=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"monitoring-servers/c=
+heckmk1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#m=
+onitoring-servers/checkmk1">checkmk1</a></td><td>0</td><td>0</td><td>-</td>=
+<td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div cla=
+ss=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</t=
+d></tr><tr><th>Cum. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx r=
+esponses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th=
+><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><t=
+d>(0%)</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></=
+tr><tr><th>- HTTP 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- =
+other responses:</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg =
+over last 1024 success. conn.</th></tr><tr><th>- Queue time:</th><td>0</td>=
+<td>ms</td></tr><tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><=
+th>- Response time:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th=
+><td>0</td><td>ms</td></tr></tbody></table></div></u></td><td>0</td><td>?</=
+td><td>0</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div c=
+lass=3D"tips">Connection resets during transfers: 0 client, 0 server</div><=
+/u></td><td>0</td><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac">=
+<u> L4OK in 0ms<div class=3D"tips">Layer4 check passed</div></u></td><td cl=
+ass=3D"ac">1</td><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div=
+ class=3D"tips">Failed Health Checks</div></u></td><td>0</td><td>0s</td><td=
+ class=3D"ac">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"monitoring-servers/Backen=
+d"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#monitor=
+ing-servers/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td=
+><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"t=
+ips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr>=
+<tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses=
+:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><=
+th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HT=
+TP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>=
+0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other=
+ responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td>=
+</tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><=
+th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th>=
+<td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td=
+></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table><=
+/div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compre=
+ssion: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</=
+td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets during =
+transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=
+=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td=
+ class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>=
+0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"di=
+tlala-apps-cluster"></a><a class=3D"px" href=3D"http://192.168.72.12/haprox=
+y?stats#ditlala-apps-cluster">ditlala-apps-cluster</a></th><th class=3D"emp=
+ty" width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"ditlala-apps-cluster=
+/s1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#ditla=
+la-apps-cluster/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>=
+0</td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><t=
+able class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th=
+>Cum. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th>=
+<td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td=
+>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></t=
+r><tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- H=
+TTP 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other response=
+s:</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024=
+ success. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></t=
+r><tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response =
+time:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td=
+>ms</td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><=
+td>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">=
+Connection resets during transfers: 0 client, 0 server</div></u></td><td>0<=
+/td><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in 0m=
+s<div class=3D"tips">Layer4 check passed</div></u></td><td class=3D"ac">1</=
+td><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"tips=
+">Failed Health Checks</div></u></td><td>0</td><td>0s</td><td class=3D"ac">=
+-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"ditlala-apps-cluster/Back=
+end"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#ditla=
+la-apps-cluster/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0=
+</td><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=
+=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td>=
+</tr><tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx resp=
+onses:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr>=
+<tr><th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th=
+>- HTTP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th=
+><td>0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- =
+other responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0=
+</td></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr>=
+<tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:=
+</th><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>m=
+s</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></ta=
+ble></div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">c=
+ompression: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><t=
+d>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets du=
+ring transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td cl=
+ass=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td>=
+<td class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><=
+td>0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"si=
+mlala-ws-cluster"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?=
+stats#simlala-ws-cluster">simlala-ws-cluster</a></th><th class=3D"empty" wi=
+dth=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"simlala-ws-cluster/n=
+ode1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#siml=
+ala-ws-cluster/node1">node1</a></td><td>0</td><td>0</td><td>-</td><td>0</td=
+><td>0</td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tip=
+s"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><t=
+r><th>Cum. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:=
+</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</t=
+d><td>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</t=
+d></tr><tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><t=
+h>- HTTP 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other res=
+ponses:</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last=
+ 1024 success. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</t=
+d></tr><tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Resp=
+onse time:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</t=
+d><td>ms</td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0<=
+/td><td>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"t=
+ips">Connection resets during transfers: 0 client, 0 server</div></u></td><=
+td>0</td><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L7OK/=
+200 in 1ms<div class=3D"tips">Layer7 check passed: OK</div></u></td><td cla=
+ss=3D"ac">1</td><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div =
+class=3D"tips">Failed Health Checks</div></u></td><td>0</td><td>0s</td><td =
+class=3D"ac">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"simlala-ws-cluster/Backen=
+d"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#simlala=
+-ws-cluster/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td=
+><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"t=
+ips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr>=
+<tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses=
+:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><=
+th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HT=
+TP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>=
+0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other=
+ responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td>=
+</tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><=
+th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th>=
+<td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td=
+></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table><=
+/div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compre=
+ssion: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</=
+td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets during =
+transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=
+=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td=
+ class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>=
+0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"si=
+mlala-app-cluster"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy=
+?stats#simlala-app-cluster">simlala-app-cluster</a></th><th class=3D"empty"=
+ width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"simlala-app-cluster/=
+s1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#simlal=
+a-app-cluster/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>0<=
+/td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><tab=
+le class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>C=
+um. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><t=
+d>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td>(=
+0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></tr>=
+<tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTT=
+P 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other responses:=
+</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024 s=
+uccess. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr>=
+<tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response ti=
+me:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>m=
+s</td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><td=
+>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Co=
+nnection resets during transfers: 0 client, 0 server</div></u></td><td>0</t=
+d><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in 0ms<=
+div class=3D"tips">Layer4 check passed</div></u></td><td class=3D"ac">1</td=
+><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"tips">=
+Failed Health Checks</div></u></td><td>0</td><td>0s</td><td class=3D"ac">-<=
+/td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"simlala-app-cluster/Backe=
+nd"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#simlal=
+a-app-cluster/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</=
+td><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D=
+"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></t=
+r><tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx respons=
+es:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr=
+><th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- =
+HTTP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><t=
+d>0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- oth=
+er responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</t=
+d></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr=
+><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</t=
+h><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</=
+td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table=
+></div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">comp=
+ression: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0=
+</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets durin=
+g transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=
+=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td=
+ class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>=
+0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"ka=
+pal-apps-cluster"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?=
+stats#kapal-apps-cluster">kapal-apps-cluster</a></th><th class=3D"empty" wi=
+dth=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"kapal-apps-cluster/s=
+1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#kapal-a=
+pps-cluster/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>0</t=
+d><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><table=
+ class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>Cum=
+. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><td>=
+0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td>(0%=
+)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></tr><t=
+r><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP =
+5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other responses:</=
+th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024 suc=
+cess. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><t=
+r><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response time=
+:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>ms<=
+/td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><td>0=
+</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Conn=
+ection resets during transfers: 0 client, 0 server</div></u></td><td>0</td>=
+<td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in 0ms<di=
+v class=3D"tips">Layer4 check passed</div></u></td><td class=3D"ac">1</td><=
+td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"tips">Fa=
+iled Health Checks</div></u></td><td>0</td><td>0s</td><td class=3D"ac">-</t=
+d></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"kapal-apps-cluster/Backen=
+d"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#kapal-a=
+pps-cluster/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td=
+><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"t=
+ips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr>=
+<tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses=
+:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><=
+th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HT=
+TP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>=
+0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other=
+ responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td>=
+</tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><=
+th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th>=
+<td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td=
+></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table><=
+/div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compre=
+ssion: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</=
+td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets during =
+transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=
+=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td=
+ class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>=
+0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"si=
+mlala-dev-cluster"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy=
+?stats#simlala-dev-cluster">simlala-dev-cluster</a></th><th class=3D"empty"=
+ width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"simlala-dev-cluster/=
+s1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#simlal=
+a-dev-cluster/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>0<=
+/td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><tab=
+le class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>C=
+um. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><t=
+d>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td>(=
+0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></tr>=
+<tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTT=
+P 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other responses:=
+</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024 s=
+uccess. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr>=
+<tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response ti=
+me:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>m=
+s</td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><td=
+>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Co=
+nnection resets during transfers: 0 client, 0 server</div></u></td><td>0</t=
+d><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in 0ms<=
+div class=3D"tips">Layer4 check passed</div></u></td><td class=3D"ac">1</td=
+><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"tips">=
+Failed Health Checks</div></u></td><td>0</td><td>0s</td><td class=3D"ac">-<=
+/td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"simlala-dev-cluster/Backe=
+nd"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#simlal=
+a-dev-cluster/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</=
+td><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D=
+"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></t=
+r><tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx respons=
+es:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr=
+><th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- =
+HTTP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><t=
+d>0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- oth=
+er responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</t=
+d></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr=
+><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</t=
+h><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</=
+td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table=
+></div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">comp=
+ression: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0=
+</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets durin=
+g transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=
+=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td=
+ class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>=
+0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"hu=
+bpayment-apps-cluster"></a><a class=3D"px" href=3D"http://192.168.72.12/hap=
+roxy?stats#hubpayment-apps-cluster">hubpayment-apps-cluster</a></th><th cla=
+ss=3D"empty" width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"hubpayment-apps-clus=
+ter/s1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#hu=
+bpayment-apps-cluster/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</t=
+d><td>0</td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"ti=
+ps"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><=
+tr><th>Cum. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses=
+:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</=
+td><td>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</=
+td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><=
+th>- HTTP 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other re=
+sponses:</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over las=
+t 1024 success. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</=
+td></tr><tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Res=
+ponse time:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</=
+td><td>ms</td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0=
+</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"=
+tips">Connection resets during transfers: 0 client, 0 server</div></u></td>=
+<td>0</td><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK=
+ in 1ms<div class=3D"tips">Layer4 check passed</div></u></td><td class=3D"a=
+c">1</td><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=
+=3D"tips">Failed Health Checks</div></u></td><td>0</td><td>0s</td><td class=
+=3D"ac">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"hubpayment-apps-cluster/B=
+ackend"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#hu=
+bpayment-apps-cluster/Backend">Backend</a></td><td>0</td><td>0</td><td></td=
+><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div =
+class=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0=
+</td></tr><tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx=
+ responses:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td>=
+</tr><tr><th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><t=
+r><th>- HTTP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses=
+:</th><td>0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><=
+th>- other responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th>=
+<td>0</td></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th>=
+</tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect =
+time:</th><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td>=
+<td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody=
+></table></div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"ti=
+ps">compression: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</=
+td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection rese=
+ts during transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><=
+td class=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1=
+</td><td class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;<=
+/td><td>0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"vt=
+a-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?stats#v=
+ta-servers">vta-servers</a></th><th class=3D"empty" width=3D"90%"></th></tr=
+>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"vta-servers/s1"></a>=
+<a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#vta-servers/s1=
+">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>0</td><td></td><td=
+>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><table class=3D"det"=
+><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>Cum. HTTP respons=
+es:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><td>0</td><td>(0%)=
+</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td>(0%)</td></tr><tr=
+><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 4=
+xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 5xx responses:=
+</th><td>0</td><td>(0%)</td></tr><tr><th>- other responses:</th><td>0</td><=
+td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</t=
+h></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connec=
+t time:</th><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</t=
+d><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbo=
+dy></table></div></u></td><td>0</td><td>?</td><td>0</td><td>0</td><td></td>=
+<td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets =
+during transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td =
+class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in 0ms<div class=3D"tip=
+s">Layer4 check passed</div></u></td><td class=3D"ac">1</td><td class=3D"ac=
+">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"tips">Failed Health Ch=
+ecks</div></u></td><td>0</td><td>0s</td><td class=3D"ac">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"vta-servers/Backend"></a>=
+<a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#vta-servers/Ba=
+ckend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td><td>0</td><td=
+></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"tips"><table cl=
+ass=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>Cum. H=
+TTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><td>0</t=
+d></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><th>&nbsp;&nbsp=
+;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx respons=
+es:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td></tr><tr=
+><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other responses:</t=
+h><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td></tr><tr><th c=
+olspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><th>- Queue tim=
+e:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th><td>0</td><td>=
+ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td></tr><tr><th>=
+- Total time:</th><td>0</td><td>ms</td></tr></tbody></table></div></u></td>=
+<td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compression: in=3D0 =
+out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</td><td></td><t=
+d>0</td><td><u>0<div class=3D"tips">Connection resets during transfers: 0 c=
+lient, 0 server</div></u></td><td>0</td><td>0</td><td class=3D"ac">35m4s UP=
+</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td class=3D"ac">1<=
+/td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>0</td><td>0s</td=
+><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"vt=
+a-dev-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?sta=
+ts#vta-dev-servers">vta-dev-servers</a></th><th class=3D"empty" width=3D"90=
+%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"vta-dev-servers/s1">=
+</a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#vta-dev-se=
+rvers/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>0</td><td>=
+</td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><table class=
+=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>Cum. HTTP=
+ responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><td>0</td>=
+<td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td>(0%)</td>=
+</tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>=
+- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 5xx re=
+sponses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other responses:</th><td=
+>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024 success. =
+conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>=
+- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response time:</th>=
+<td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></=
+tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><td>0</td><=
+td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection=
+ resets during transfers: 0 client, 0 server</div></u></td><td>0</td><td>0<=
+/td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in 0ms<div clas=
+s=3D"tips">Layer4 check passed</div></u></td><td class=3D"ac">1</td><td cla=
+ss=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"tips">Failed H=
+ealth Checks</div></u></td><td>0</td><td>0s</td><td class=3D"ac">-</td></tr=
+>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"vta-dev-servers/Backend">=
+</a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#vta-dev-se=
+rvers/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td><td>0=
+</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"tips"><=
+table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><t=
+h>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th>=
+<td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><th>&nb=
+sp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx=
+ responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td>=
+</tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other respo=
+nses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td></tr><=
+tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><th>- Q=
+ueue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th><td>0<=
+/td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td></tr>=
+<tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table></div><=
+/u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compression:=
+ in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</td><td=
+></td><td>0</td><td><u>0<div class=3D"tips">Connection resets during transf=
+ers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=3D"ac">=
+35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td class=
+=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>0</td>=
+<td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"di=
+tkapel-app-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/haprox=
+y?stats#ditkapel-app-servers">ditkapel-app-servers</a></th><th class=3D"emp=
+ty" width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"ditkapel-app-servers=
+/s1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#ditka=
+pel-app-servers/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>=
+0</td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><t=
+able class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th=
+>Cum. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th>=
+<td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td=
+>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></t=
+r><tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- H=
+TTP 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other response=
+s:</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024=
+ success. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></t=
+r><tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response =
+time:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td=
+>ms</td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><=
+td>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">=
+Connection resets during transfers: 0 client, 0 server</div></u></td><td>0<=
+/td><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L7OK/200 i=
+n 13ms<div class=3D"tips">Layer7 check passed: HTTP status check returned c=
+ode &lt;200&gt;</div></u></td><td class=3D"ac">1</td><td class=3D"ac">Y</td=
+><td class=3D"ac">-</td><td><u>31<div class=3D"tips">Failed Health Checks</=
+div></u></td><td>0</td><td>0s</td><td class=3D"ac">-</td></tr>
+<tr class=3D"backup4"><td class=3D"ac"><a name=3D"ditkapel-app-servers/s2">=
+</a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#ditkapel-a=
+pp-servers/s2">s2</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>0</td=
+><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><table =
+class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>Cum.=
+ HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><td>0=
+</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td>(0%)=
+</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></tr><tr=
+><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 5=
+xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other responses:</t=
+h><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024 succ=
+ess. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr=
+><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response time:=
+</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</=
+td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><td>0<=
+/td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Conne=
+ction resets during transfers: 0 client, 0 server</div></u></td><td>0</td><=
+td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L7OK/200 in 11m=
+s<div class=3D"tips">Layer7 check passed: HTTP status check returned code &=
+lt;200&gt;</div></u></td><td class=3D"ac">1</td><td class=3D"ac">-</td><td =
+class=3D"ac">Y</td><td><u>27<div class=3D"tips">Failed Health Checks</div><=
+/u></td><td>0</td><td>0s</td><td class=3D"ac">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"ditkapel-app-servers/Back=
+end"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#ditka=
+pel-app-servers/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0=
+</td><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=
+=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td>=
+</tr><tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx resp=
+onses:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr>=
+<tr><th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th=
+>- HTTP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th=
+><td>0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- =
+other responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0=
+</td></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr>=
+<tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:=
+</th><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>m=
+s</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></ta=
+ble></div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">c=
+ompression: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><t=
+d>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets du=
+ring transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td cl=
+ass=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td>=
+<td class=3D"ac">1</td><td class=3D"ac">1</td><td class=3D"ac">&nbsp;</td><=
+td>0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"an=
+gudol-app-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy=
+?stats#angudol-app-servers">angudol-app-servers</a></th><th class=3D"empty"=
+ width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"angudol-app-servers/=
+s1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#angudo=
+l-app-servers/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>0<=
+/td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><tab=
+le class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>C=
+um. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><t=
+d>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td>(=
+0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></tr>=
+<tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTT=
+P 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other responses:=
+</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024 s=
+uccess. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr>=
+<tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response ti=
+me:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>m=
+s</td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><td=
+>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Co=
+nnection resets during transfers: 0 client, 0 server</div></u></td><td>0</t=
+d><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in 2ms<=
+div class=3D"tips">Layer4 check passed</div></u></td><td class=3D"ac">1</td=
+><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"tips">=
+Failed Health Checks</div></u></td><td>0</td><td>0s</td><td class=3D"ac">-<=
+/td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"angudol-app-servers/Backe=
+nd"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#angudo=
+l-app-servers/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</=
+td><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D=
+"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></t=
+r><tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx respons=
+es:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr=
+><th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- =
+HTTP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><t=
+d>0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- oth=
+er responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</t=
+d></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr=
+><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</t=
+h><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</=
+td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table=
+></div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">comp=
+ression: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0=
+</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets durin=
+g transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=
+=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td=
+ class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>=
+0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"ot=
+her-haproxy-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/hapro=
+xy?stats#other-haproxy-servers">other-haproxy-servers</a></th><th class=3D"=
+empty" width=3D"90%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"other-haproxy-server=
+s/s1"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#othe=
+r-haproxy-servers/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><t=
+d>0</td><td></td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips">=
+<table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><=
+th>Cum. HTTP responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</t=
+h><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><=
+td>(0%)</td></tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td><=
+/tr><tr><th>- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>-=
+ HTTP 5xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other respon=
+ses:</th><td>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 10=
+24 success. conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td><=
+/tr><tr><th>- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Respons=
+e time:</th><td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><=
+td>ms</td></tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td=
+><td>0</td><td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips=
+">Connection resets during transfers: 0 client, 0 server</div></u></td><td>=
+0</td><td>0</td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in =
+0ms<div class=3D"tips">Layer4 check passed</div></u></td><td class=3D"ac">1=
+</td><td class=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"ti=
+ps">Failed Health Checks</div></u></td><td>0</td><td>0s</td><td class=3D"ac=
+">-</td></tr>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"other-haproxy-servers/Bac=
+kend"></a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#othe=
+r-haproxy-servers/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td=
+>0</td><td>0</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div clas=
+s=3D"tips"><table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td=
+></tr><tr><th>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx res=
+ponses:</th><td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr=
+><tr><th>&nbsp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><t=
+h>- HTTP 3xx responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</t=
+h><td>0</td></tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>-=
+ other responses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>=
+0</td></tr><tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr=
+><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time=
+:</th><td>0</td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>=
+ms</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></t=
+able></div></u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">=
+compression: in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><=
+td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection resets d=
+uring transfers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td c=
+lass=3D"ac">35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td=
+><td class=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td>=
+<td>0</td><td>0s</td><td></td></tr></tbody></table><p>
+</p><table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th class=3D"pxname" width=3D"10%"><a name=3D"pe=
+ntest-servers"></a><a class=3D"px" href=3D"http://192.168.72.12/haproxy?sta=
+ts#pentest-servers">pentest-servers</a></th><th class=3D"empty" width=3D"90=
+%"></th></tr>
+</tbody></table>
+<table class=3D"tbl" width=3D"100%">
+<tbody><tr class=3D"titre"><th rowspan=3D"2"></th><th colspan=3D"3">Queue</=
+th><th colspan=3D"3">Session rate</th><th colspan=3D"6">Sessions</th><th co=
+lspan=3D"2">Bytes</th><th colspan=3D"2">Denied</th><th colspan=3D"3">Errors=
+</th><th colspan=3D"2">Warnings</th><th colspan=3D"9">Server</th></tr>
+<tr class=3D"titre"><th>Cur</th><th>Max</th><th>Limit</th><th>Cur</th><th>M=
+ax</th><th>Limit</th><th>Cur</th><th>Max</th><th>Limit</th><th>Total</th><t=
+h>LbTot</th><th>Last</th><th>In</th><th>Out</th><th>Req</th><th>Resp</th><t=
+h>Req</th><th>Conn</th><th>Resp</th><th>Retr</th><th>Redis</th><th>Status</=
+th><th>LastChk</th><th>Wght</th><th>Act</th><th>Bck</th><th>Chk</th><th>Dwn=
+</th><th>Dwntme</th><th>Thrtle</th>
+</tr><tr class=3D"active4"><td class=3D"ac"><a name=3D"pentest-servers/s1">=
+</a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#pentest-se=
+rvers/s1">s1</a></td><td>0</td><td>0</td><td>-</td><td>0</td><td>0</td><td>=
+</td><td>0</td><td>0</td><td>-</td><td><u>0<div class=3D"tips"><table class=
+=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><th>Cum. HTTP=
+ responses:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th><td>0</td>=
+<td>(0%)</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td><td>(0%)</td>=
+</tr><tr><th>- HTTP 3xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>=
+- HTTP 4xx responses:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 5xx re=
+sponses:</th><td>0</td><td>(0%)</td></tr><tr><th>- other responses:</th><td=
+>0</td><td>(0%)</td></tr><tr><th colspan=3D"3">Avg over last 1024 success. =
+conn.</th></tr><tr><th>- Queue time:</th><td>0</td><td>ms</td></tr><tr><th>=
+- Connect time:</th><td>0</td><td>ms</td></tr><tr><th>- Response time:</th>=
+<td>0</td><td>ms</td></tr><tr><th>- Total time:</th><td>0</td><td>ms</td></=
+tr></tbody></table></div></u></td><td>0</td><td>?</td><td>0</td><td>0</td><=
+td></td><td>0</td><td></td><td>0</td><td><u>0<div class=3D"tips">Connection=
+ resets during transfers: 0 client, 0 server</div></u></td><td>0</td><td>0<=
+/td><td class=3D"ac">35m4s UP</td><td class=3D"ac"><u> L4OK in 0ms<div clas=
+s=3D"tips">Layer4 check passed</div></u></td><td class=3D"ac">1</td><td cla=
+ss=3D"ac">Y</td><td class=3D"ac">-</td><td><u>0<div class=3D"tips">Failed H=
+ealth Checks</div></u></td><td>0</td><td>0s</td><td class=3D"ac">-</td></tr=
+>
+<tr class=3D"backend"><td class=3D"ac"><a name=3D"pentest-servers/Backend">=
+</a><a class=3D"lfsb" href=3D"http://192.168.72.12/haproxy?stats#pentest-se=
+rvers/Backend">Backend</a></td><td>0</td><td>0</td><td></td><td>0</td><td>0=
+</td><td></td><td>0</td><td>0</td><td>300</td><td><u>0<div class=3D"tips"><=
+table class=3D"det"><tbody><tr><th>Cum. sessions:</th><td>0</td></tr><tr><t=
+h>Cum. HTTP requests:</th><td>0</td></tr><tr><th>- HTTP 1xx responses:</th>=
+<td>0</td></tr><tr><th>- HTTP 2xx responses:</th><td>0</td></tr><tr><th>&nb=
+sp;&nbsp;Compressed 2xx:</th><td>0</td><td>(0%)</td></tr><tr><th>- HTTP 3xx=
+ responses:</th><td>0</td></tr><tr><th>- HTTP 4xx responses:</th><td>0</td>=
+</tr><tr><th>- HTTP 5xx responses:</th><td>0</td></tr><tr><th>- other respo=
+nses:</th><td>0</td></tr><tr><th>Intercepted requests:</th><td>0</td></tr><=
+tr><th colspan=3D"3">Avg over last 1024 success. conn.</th></tr><tr><th>- Q=
+ueue time:</th><td>0</td><td>ms</td></tr><tr><th>- Connect time:</th><td>0<=
+/td><td>ms</td></tr><tr><th>- Response time:</th><td>0</td><td>ms</td></tr>=
+<tr><th>- Total time:</th><td>0</td><td>ms</td></tr></tbody></table></div><=
+/u></td><td>0</td><td>?</td><td>0</td><td>0<div class=3D"tips">compression:=
+ in=3D0 out=3D0 bypassed=3D0 savings=3D0%</div></td><td>0</td><td>0</td><td=
+></td><td>0</td><td><u>0<div class=3D"tips">Connection resets during transf=
+ers: 0 client, 0 server</div></u></td><td>0</td><td>0</td><td class=3D"ac">=
+35m4s UP</td><td class=3D"ac">&nbsp;</td><td class=3D"ac">1</td><td class=
+=3D"ac">1</td><td class=3D"ac">0</td><td class=3D"ac">&nbsp;</td><td>0</td>=
+<td>0s</td><td></td></tr></tbody></table><p>
+
+</p></body></html>
+------MultipartBoundary--lMJtZ0zOMstXRfuPSzXNsnABBk9RCsrfW6EtuGJkHA------
